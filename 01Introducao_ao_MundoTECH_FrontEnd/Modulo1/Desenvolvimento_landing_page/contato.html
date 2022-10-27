@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company NAME - Contato</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body class="conteudo">
+
+    <!--Header-->
+    <header>
+        <section>
+        <img src="img/Logo_empresa.png" alt="Logo Empresa" width="200px" height="150px">
+            <nav>
+                <li>
+                    <button class="botao"><a href="inicio.html">Início</a></button><br>
+                </li>
+                <li>
+                    <button class="botao botao-destaque"><a href="contato.html">Contato</a></button><br>
+                </li>
+            </nav>
+        </section>
+    </header>
+    
+    <!--Main-->
+    <main class="sobre">
+        <section class="linha">
+            <article class="conteudo">
+                <h1>Landing Page</h1> 
+                <h2>Formulário de Contato</h2>
+                <p>
+                    Preencha os dados abaixo e envie sua mensagem de contato.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae sed rem soluta rerum animi illo voluptatum. Quas modi nemo fugit nobis perferendis qui eaque, quae culpa corrupti ullam eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid cum molestiae, id temporibus, amet, quae esse explicabo ad nobis tenetur. Minima dicta non soluta sunt debitis assumenda tempore. Dicta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam qui, in amet facere aperiam, fugit culpa cum aut soluta, asperiores sapiente. In hic dolores quidem eum fugit velit rerum facilis.
+                </p>     
+            </article>    
+            <fieldset>
+                <legend>
+                    <h2>Dados de contato:</h2>
+                </legend>
+                <!--Formulário-->
+                    <form id="frmInscricao" action="contato.php" method="post">
+
+                        <label>Nome:</label> <br>
+                        <input class="entrada rotulo" type="text" required="requered" id="txtNome" maxlength="100" size="50">
+                        <br>
+                        <br>
+                        <label>Data de Nascimento:</label> <br>
+                        <input class="entrada rotulo" type="date" name="date">
+                        <br>
+                        <br>
+                        Sexo: <br>
+                        Masculino<input class="entrada rotulo" type="radio" name="radioSexo" value="M">
+                        Feminino<input class="entrada rotulo" type="radio" name="radioSexo" value="F">
+                        <br>
+                        <br>
+                        Endereço: <br>
+                        <input class="entrada rotulo" type="text" name="endereco">
+                        <br>
+                        <br>
+                        <label>Estado:</label> <br>
+                        <select id="cbxEstado" required="requered">
+                            <option value="">--Selecione--</option>
+                            <option value="1">AC</option>
+                            <option value="2">AL</option>
+                            <option value="3">AP</option>
+                            <option value="4">AM</option>
+                            <option value="5">BA</option>
+                            <option value="6">CE</option>
+                            <option value="7">DF</option>
+                            <option value="8">ES</option>
+                            <option value="9">GO</option>
+                            <option value="10">MA</option>
+                            <option value="11">MT</option>
+                            <option value="12">MS</option>
+                            <option value="13">MG</option>
+                            <option value="14">PA</option>
+                            <option value="15">PB</option>
+                            <option value="16">PR</option>
+                            <option value="17">PE</option>
+                            <option value="18">PI</option>
+                            <option value="19">RJ</option>
+                            <option value="20">RN</option>
+                            <option value="21">RS</option>
+                            <option value="22">RO</option>
+                            <option value="23">RR</option>
+                            <option value="24">SC</option>
+                            <option value="25">SP</option>
+                            <option value="26">SE</option>
+                            <option value="27">TO</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Cidade:</label> <br>
+                        <select id="cbxCidade" required="required">
+                            <option value="">--Selecione--</option>
+                            <option value="1">Rio Branco</option>
+                            <option value="21">Porto Alegre</option>
+                            <option value="21">Santa Maria</option>
+                            <option value="24">Florianópolis</option>
+                            <option value="25">São Paulo</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Número do telefone:</label> <br>
+                        <input class="entrada rotulo" type="number" name="telnumber" placeholder="(##)#####-####" size="11">
+                        <br>
+                        <br>
+                        <label>E-mail:</label> <br>
+                        <input class="entrada rotulo" type="email" required="required" size="50" id="txtEmail">
+                        <br>
+                        <br>
+                        <label>Áreas de Interesse:</label> <br>
+                        <input class="entrada rotulo" type="checkbox" value="html" nome="chkAreasInteresse"> HTML
+                        <input class="entrada rotulo" type="checkbox" value="CSS"  nome="chkAreasInteresse"> CSS
+                        <input class="entrada rotulo" type="checkbox" value="javascript"  nome="chkAreasInteresse"> JavaScript
+                        <br>
+                        <br>
+                        <label>Mensagem</label> <br>
+                        <textarea class="entrada mensagem" cols=”140” rows=”140”></textarea>
+                        <br>
+                        <br>
+                        <!--Botão-->
+                        <input class="entrada agrupamento agrupamento-botao" type="submit" value="Enviar">
+                    </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        Nossas redes sociais:<br>
+        <!--Lista não ordenada-->
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/"><img src="img/Logo_linkedin.jpg" alt="Logo Linkedin" width="50px" height="50px"></a><br>
+            </li>
+            <li>    
+                <a href="https://twitter.com/"><img src="img/Logo_twitter.jpg" alt="Logo Twitter" width="50px" height="50px"></a><br>
+            </li>
+            <li>    
+                <a href="https://facebook.com"><img src="img/Logo_facebook.jpg" alt="Logo Facebook" width="45px" height="45px"></a><br>
+            </li>
+            <li>    
+                <a href="https://instagram.com"><img src="img/Logo_instagram.jpg" alt="Logo Instagram" width="45px" height="45px"></a><br>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
