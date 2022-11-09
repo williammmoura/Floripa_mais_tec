@@ -58,3 +58,36 @@ console.log('=======================================')
 for(let contador5 = 0; contador5 <= 10; contador5++){//Variável de Controle; Verificação de condição; Instrução de incremento
     console.log('Loop número ',contador5);
 };
+
+console.log('=======================================')
+
+let periodo_dia ="noite"
+
+if(periodo_dia === "manhã"){
+    console.log('Bom dia!');
+}else if(periodo_dia === 'tarde'){
+    console.log('Boa tarde!');
+}else if(periodo_dia === 'noite'){
+    console.log('Boa noite!')
+}else{
+    console.log('Que horas são?')
+}
+
+console.log('=======================================')
+//Switch/case
+
+let periodo_dia2 = 'tarde';
+
+switch(periodo_dia2){
+    case 'manhã':
+        console.log('Bom dia!');
+        break;
+    case 'tarde':
+        console.log('Boa tarde!');
+        break;
+    case 'noite':
+        console.log('Boa noite!');
+        break;
+    default:
+        console.log('Que horas são?')
+}

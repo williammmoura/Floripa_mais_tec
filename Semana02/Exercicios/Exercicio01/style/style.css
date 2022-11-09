@@ -1,64 +1,53 @@
 body{
-    font: normal 16pt Arial;
-    color: rgb(3, 238, 22);
-    background-color: rgb(3, 1, 37);
+    font: normal 18px Arial;
+    background-color: rgb(163, 163, 163);
 }
 
 /*Header*/
 header{
+    background-color: rgb(0, 183, 255);
     text-align: center;
+    margin: 5px 5px 5px;
 }
 
 /*Section*/
 #parIntro{
     text-align: justify;
     text-indent: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-span{
-    background-color: white;
-    color:rgb(3, 1, 37);
+    margin:5px 30%;
 }
 
-#instrucoes{
-    text-align: justify;
-    margin-left: 20%;
-    margin-right: 20%; 
-}
-
-#calcFunc{
-    background-color: rgb(3, 238, 22);
-    margin-left: 28%;
-    margin-right: 28%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+#container{
+    height: 260px;
+    width: 260px;
+    background-color: rgb(0, 183, 255);
+    margin: auto;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.426);
 }
 #resultado{
-    font: normal 44pt Arial;
+    font: normal 30pt Arial;
     color: rgb(3, 238, 22);
     background-color: rgb(3,1, 37);
     text-align: right;
+    height: 55px;
+    width: 250px;
+    padding: 5px;
+    margin: auto;
 }
 
 /*Tabela*/
 table{
-    margin: auto;
+    margin:auto;
 }
 th, td{
     text-align: center;
+    margin: auto;
 }
 .btnColor{
     background-color: rgb(3,1, 37);
     color: rgb(3, 238, 22);
     font: normal 18pt Arial;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.632);
     cursor: pointer;
 }
 .btnColor:hover{
@@ -72,6 +61,6 @@ footer{
     margin-right: 20%;
 }
 img{
-    width: 50px;
+    width: 45px;
     height: 35px;
 }
