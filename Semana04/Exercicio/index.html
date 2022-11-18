@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, et?</p>
+        </section>
+        
+        <!--Entrada do primeiro valor-->
+        <input type="number" id="ent1" placeholder="Entre com o primeiro valor">
+        
+        <!--Seleção de opções-->
+        <select name="operador" id="operador">
+            <option value="soma">+</option>
+            <option value="subtracao">-</option>
+            <option value="multi">x</option>
+            <option value="divisao">÷</option>
+            <option value="potencia">n¹</option>
+            <option value="modulo">resto divisão</option>
+        </select>
+
+        <!--Entrada do segundo valor-->
+        <input type="number" id="ent2" placeholder="Entre com o segundo valor">
+
+        <!--Botão com evento JS-->
+        <button onclick="calcular()">Calcular</button>
+
+        <!--Resultado-->
+        <div id="resultado">Resultado.</div>
+    </main>
+</body>
+</html>

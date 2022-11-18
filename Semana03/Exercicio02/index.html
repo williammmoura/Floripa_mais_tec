@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha Período</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Período do Dia</h1>
+    </header>
+    <main>
+        <section class="card">
+            <p>
+                Escolha uma das seguintes opções:
+            </p>
+            <ul>
+                <li>1 = Manhã</li>
+                <li>2 = Tarde</li>
+                <li>3 = Noite</li>
+            </ul>
+        </section>
+
+
+        <label>Opções:</label>
+        <select name="respSelec" id="respSelec" required>
+            <option value="">--Selecione--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <!--Botão-->
+        <input type="button" value="Escolha" id="resbut" name="resbut" onclick="escolher()">
+            
+        <div id="res">
+            Resposta, aqui!
+        </div>
+    </main>
+</body>
+</html>
