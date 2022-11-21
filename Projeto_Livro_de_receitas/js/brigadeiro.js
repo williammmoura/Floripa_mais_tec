@@ -2,7 +2,7 @@ let listaDeComentarios = [];
 
 let comentario = {
     nome: 'William',
-    nota: 10,
+    nota: 5,
     comentario: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis sunt saepe impedit sint. Itaque rerum quam nam porro et iure perferendis odio veniam officia facilis autem, veritatis, minus aut!',
 };
 
@@ -19,7 +19,6 @@ function capturarFormulario(){
         nota: nota_el.value,
         comentario: comentario_el.value,
     };
-
     criarComentarioHTML(resultadoFormulario);
 };
 
@@ -44,4 +43,3 @@ function criarComentarioHTML(objeto){
     //Adicionando elementos "li´s" dentro do "ul".
     ul.appendChild(li);
 }
-
